@@ -1,17 +1,32 @@
-\documentclass[a4paper,12pt]{book}
+\documentclass[12pt]{book}
+
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[english,russian]{babel}
+\usepackage[russian]{babel}
+\usepackage{indentfirst}
+\usepackage{geometry}
+\usepackage{titlesec}
+\geometry{
+  a4paper,
+  top=2cm,      
+  bottom=2cm,  
+  left=2.5cm,       
+  right=1.5cm,    
+}
+
+\titleformat{\section}
+  {\normalfont\bfseries\centering}
+  {}{0pt}{}
 
 \title{Избранные произведения}
-\author{Даниил Хармс}
+\author{ДАНИИЛ ХАРМС}
 \date{}
 
 \begin{document}
 
+\setlength{\parindent}{1.5cm}
 \maketitle
-
-\tableofcontents
+\vspace*{-\baselineskip}
 
 \chapter{Вопрос}
 \input{stories/vopros}
