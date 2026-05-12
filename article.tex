@@ -1,32 +1,49 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[12pt]{article}
+
 \usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage[english,russian]{babel}
+\usepackage[russian]{babel}
+\usepackage{indentfirst}
+\usepackage{geometry}
+\usepackage{titlesec}
+\geometry{
+  a4paper,
+  top=2cm,      
+  bottom=2cm,  
+  left=2.5cm,       
+  right=1.5cm,     
+}
+
+\titleformat{\section}
+  {\normalfont\bfseries\centering}
+  {}{0pt}{}
 
 \title{Избранные произведения}
-\author{Даниил Хармс}
+\author{ДАНИИЛ ХАРМС}
 \date{}
 
 \begin{document}
 
+\setlength{\parindent}{1.5cm}
 \maketitle
+\vspace*{-\baselineskip}
 
-\section{Вопрос}
+\section*{\centering Вопрос}
 \input{stories/vopros}
 
-\section{Забыл, как называется}
+\section*{\centering Забыл, как называется}
 \input{stories/zabyl}
 
-\section{Молочный зуб}
+\section*{\centering Молочный зуб}
 \input{stories/molochny_zub}
 
-\section{Очень страшная история}
+\section*{\centering Очень страшная история}
 \input{stories/strashnaya_istoriya}
 
-\section{Пашквиль}
+\section*{\centering Пашквиль}
 \input{stories/pashkvil}
 
-\section{Упадание}
+\section*{\centering Упадание}
 \input{stories/upadanie}
 
 \end{document}
